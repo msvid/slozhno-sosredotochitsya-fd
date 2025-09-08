@@ -39,7 +39,7 @@
     --main-color: #FFF1F7;
   }
   
-  .theme-light .header__decor-rec {
+  .header__decor-rec {
     display: none;
   }
 }
