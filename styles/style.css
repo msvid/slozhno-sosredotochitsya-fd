@@ -262,9 +262,6 @@
 
   .section__why {
     margin-block-start: 60px;
-  }
-
-  .section__why {
     grid-template-columns: 1fr 2fr;
   }
 
