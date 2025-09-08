@@ -1,3 +1,21 @@
+:root {
+  --main-text-family: 'IBM Plex mono';
+  --main-text-size: 18px;
+  --regular-font: 400;
+  --bold-font: 700;
+  --line-height: 23.4px;
+  --background-image: url(../images/cover-image-dark.png);
+  --accent-color: #FF0070;
+  --h1-color: #DB00FF;
+  --h2-color: #FF0070;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --title-color: #000028;
+  --button-color: #FF0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --main-color: #000028;
+}
+
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
