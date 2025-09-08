@@ -78,7 +78,6 @@
   padding-block-start: 3px;
 }
 
-
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
@@ -108,12 +107,11 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-
 .big-title {
   margin: 0px 10px 0px;
   font-size: clamp(6.5rem, 4.586rem + 8.1664vw, 9.8125rem);;
   font-weight: var(--bold-font);
-  color: var(--h1-color);
+  color: var(--hero-color);
   line-height: 83%;
 }
 
@@ -144,12 +142,12 @@
   gap: 20px;
 }
 
-.content-section:first-of-type {
+.section__why {
   margin-block-start: 40px;
 }
 
 .section__heading {
-  color: var(--h2-color);
+  color: var(--heading-color);
   font-size: var(--main-text-size);
   font-weight: var(--bold-font);
   line-height: var(--line-height);
@@ -182,10 +180,7 @@
 }
 
 .how_title-decor {
-  background-color: var(--accent-color);
-  color: var(--title-color);
   font-weight: var(--regular-font);
-  font-size: var(--main-text-size);
 }
 
 .section__cards {
@@ -236,9 +231,8 @@
     right: 19px;
     padding-inline-end: 10px;
   }
-
   
-  .header__decor-rec::after {  
+  .header__decor-rec::after {
     margin-inline-start: 8px;
     margin-block-end: 2px;
   }
@@ -266,7 +260,7 @@
     margin: 0 20px 0;
   }
 
-  .content-section:first-of-type {
+  .section__why {
     margin-block-start: 60px;
   }
 
@@ -279,7 +273,7 @@
   }
 
   .section__what {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .section__what .section__text-card {
@@ -301,7 +295,7 @@
 
   .cards {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 192px 230px 318px;
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
   }
 
@@ -355,32 +349,22 @@
     grid-template-columns: 1fr minmax(649px, 2fr);
   }
   
+  .section__what {
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+  }
+
+  .section__what .section__heading {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
   .section__what .section__text-card {
-    grid-row: 2 / 5; 
-  
-  }
-
-  .section__what .right {
-    grid-column: 1 / 2;
-    
-  }
-
-  .section__what .center {
-    grid-column: 2 / 3;
-    grid-row: 2 / 5; 
-  
-  }
-
-  .section__what .left {
-    grid-column: 3 / 4;
-    grid-row: 2 / 5; 
+    grid-row: 2;
+    grid-column: auto;
   }
 
   .section__how {
     grid-template-columns: 1fr minmax(649px, 2fr);
-  }
-
-  .cards {
-    grid-template-rows: 260px 315px 433px;
   }
 }

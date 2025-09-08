@@ -11,8 +11,8 @@
   */
   --background-image: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
-  --h1-color: #DB00FF;
-  --h2-color: #FF0070;
+  --hero-color: #DB00FF;
+  --heading-color: #FF0070;
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --title-color: #000028;
@@ -21,3 +21,6 @@
   --main-color: #000028;
 }
 
+.theme-dark .header__decor-rec {
+  display: block;
+}
