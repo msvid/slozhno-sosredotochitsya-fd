@@ -271,9 +271,10 @@
 
   .section__what {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 
-  .section__what .section__text-card {
+  .section__what_cards-list {
     grid-column: 1/4;
   }
 
@@ -345,20 +346,12 @@
   .section__why {
     grid-template-columns: 1fr minmax(649px, 2fr);
   }
-  
-  .section__what {
-    grid-auto-rows: auto;
-    grid-auto-flow: row;
-  }
 
-  .section__what .section__heading {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .section__what .section__text-card {
-    grid-row: 2;
-    grid-column: auto;
+  .section__what_cards-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
   }
 
   .section__how {
