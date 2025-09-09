@@ -183,6 +183,11 @@
   font-weight: var(--regular-font);
 }
 
+.section__what_cards-list {
+  display: grid;
+  gap: 20px;
+}
+
 .section__cards {
   display: grid;
   gap: 10px;
@@ -348,8 +353,6 @@
   }
 
   .section__what_cards-list {
-    display: grid;
-    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-row: auto;
   }
